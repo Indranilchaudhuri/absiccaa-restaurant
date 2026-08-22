@@ -14,7 +14,10 @@ const client = new MongoClient(process.env.MONGODB_URI);
 const database = client.db("absiccaa");
 const bookings = database.collection("bookings");
 const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    requireTLS: true,
     auth: {
         user: "absissa47@gmail.com",
         pass: process.env.EMAIL_PASSWORD
@@ -175,8 +178,8 @@ app.get("/", (req, res) => {
 });
 
 
-app.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
 
-    console.log("Server running on port 3000");
-
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server running on port ${PORT}`);
 });
