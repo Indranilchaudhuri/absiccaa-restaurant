@@ -1,0 +1,66 @@
+.book1{
+    
+     display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+    
+
+
+}
+.book1 h1{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+#booking{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+#message{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 30%;
+    font-style: italic;
+    font-size: 50px;
+}
+@media (max-width:600px){
+    .book1{
+    
+     display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+    
+
+
+    }
+.book1 h1{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center
+    }
+#booking{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+   }
+#message{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    font-style: italic;
+    font-size: 50px;
+   }
+
+}
