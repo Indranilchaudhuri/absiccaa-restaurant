@@ -1,191 +1,485 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+
+/* BACKGROUND */
 .con1 {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+position: fixed;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+z-index: 0;
 }
 
 .con11 {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(2.5px);
-    transform: scale(1.05);
+width: 100%;
+height: 100%;
+object-fit: cover;
+filter: blur(2.5px);
+transform: scale(1.05);
 }
 
+
+/* BODY — creates the scrolling area */
+body {
+min-height: 125vh;
+overflow-x: hidden;
+}
+
+
+/* TITLE */
 .con2 {
-    position: absolute;
-    inset: 0;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: top;
-    align-items: top;
+display: flex;
+flex-direction: column;
+justify-content: top;
+align-items: top;
 
-    z-index: 2;
-    color: white;
-    text-align: center;
+z-index: 2;
+color: white;
+text-align: center;
 }
 
 #con21 {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 60px;
+font-style: italic;
+font-weight: bold;
+font-size: 60px;
 }
 
 #con22 {
-    margin-top: 65px;
-   font-style: alpha;
-    font-weight: bold;
-    font-size: 25px;
-    color: rgba(255, 228, 196, 0.911);
+margin-top: 65px;
+font-style: alpha;
+font-weight: bold;
+font-size: 25px;
+color: rgba(255, 228, 196, 0.911);
 }
+
 .con2a{
-    text-decoration: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.37));
-    box-shadow: 10px 10px 10px rgba(7, 7, 7, 0.623);
-    color: rgba(224, 211, 21, 0.685);
+text-decoration: none;
+background-image: linear-gradient(rgba(0, 0, 0, 0.37));
+box-shadow: 10px 10px 10px rgba(7, 7, 7, 0.623);
+color: rgba(224, 211, 21, 0.685);
 }
+
 .con2a:hover {
-    color: rgb(245, 244, 243);
+color: rgb(245, 244, 243);
 }
+
+
+/* MENU */
 .menuli{
-    position: absolute;
-    display: flex;
-    left: 15%;
-    top: 92%;
-    transform: translateY(-50%);
-    z-index: 20;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    color: aliceblue;
+position: absolute;
+display: flex;
+left: 5%;
+top: 92%;
+transform: translateY(-50%);
+z-index: 20;
+text-align: center;
+align-items: center;
+justify-content: center;
+color: rgb(234, 238, 17);
 }
+
 .t11{
-    text-decoration: none;
-    color: rgb(250, 248, 248);
-    position: relative;
+text-decoration: none;
+color: rgb(246, 250, 12);
+position: relative;
 }
+
 .t11:hover{
-    color: aliceblue;
-    text-decoration: none;
+color: aliceblue;
+text-decoration: none;
 }
 
 .t12{
-    text-decoration: none;
-    color: rgb(248, 244, 244);
-    position: relative;
+text-decoration: none;
+color: rgb(245, 241, 13);
+position: relative;
 }
+
 .t12:hover{
-    color: aliceblue;
-    text-decoration: none;
+color: aliceblue;
+text-decoration: none;
 }
 
 .t13{
-    text-decoration: none;
-    color: rgb(245, 245, 245);
-    position: relative;
+text-decoration: none;
+color: rgb(216, 238, 17);
+position: relative;
 }
+
 .t13:hover{
-    color: rgb(236, 228, 218);
-    text-decoration: none;
+color: rgb(236, 228, 218);
+text-decoration: none;
 }
+
 .t1{
-    border: 2px solid rgba(255, 255, 255, 0.438);
-    display: flex;
-    margin: 0px 0px 0px 0px;
-    box-sizing: border-box;
-    font-size:20px ;
-    background-color: rgba(15, 15, 15, 0.295);
-    box-shadow: 5px 5px 5px rgba(252, 251, 251, 0.048);
+border: 5px solid rgba(37, 37, 36, 0.37);
+display: flex;
+margin: 0px 0px 0px 0px;
+box-shadow : 10px 10px 10px rgba(238, 238, 236, 0.356)px 0px 0px;
+box-sizing: border-box;
+font-size: 25px ;
+background-color: rgba(32, 32, 31, 0.205);
 }
+
+
+/* LOCATION — MOVED TO LEFT */
 .loc{
-    position: absolute;
-    display: flex;
-    transform: translateY(-50%);
-    left: 78%;
-    top: 90%;
-    z-index: 25;
-    color: rgb(250, 248, 248);
-    border: 2px solid rgba(255, 255, 255, 0.568);
-    margin: 0px 0px 0px 0px;
-    box-sizing: border-box;
-    font-size:20px ;
-    background-color: rgba(0, 0, 0, 0.322);
-    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.068);
+position: absolute;
+display: flex;
+transform: translateY(-50%);
+left: 35%;
+top: 90%;
+z-index: 25;
+color: rgb(237, 253, 16);
+border: 5px solid rgba(228, 228, 217, 0.13);
+margin: 0px 0px 0px 0px;
+box-sizing: border-box;
+font-size:25px ;
+background-color: rgba(51, 51, 46, 0.178);
+box-shadow: 10px 10px 10px rgba(241, 241, 238, 0);
 }
-.cont1{
-    position: absolute;
-    display: flex;
-    transform: translateY(-50%);
-    top: 150%;
-    left: 35%;
-    z-index: 27;
-    color: rgb(255, 254, 254);
-    border: 2px solid rgba(245, 244, 239, 0.603);
-    margin: 0px 0px 0px 0px;
-    box-sizing: border-box;
-    font-size: 20px; 
-    background-color: rgba(10, 10, 10, 0.397);
-    box-shadow: 5px 5px 5px rgba(245, 245, 243, 0.082);
-    
-}
-.t4{
-      border: 2px solid rgba(245, 244, 239, 0.603);
-    margin: 0px 0px 0px 0px;
-    box-sizing: border-box;
-    font-size:20px ;
-    background-color: rgba(10, 10, 10, 0.486);
-    box-shadow: 5px 5px 5px rgba(245, 245, 243, 0.082);
+
+
+/* BOOKING */
+.book {
+position: absolute;
+z-index: 30;
+left: 75%;
+top: 85%;
+text-decoration: none;
+color: rgb(200, 233, 12);
+
 
 }
-.book {
-    position: absolute;
-    z-index: 28;
-    left: 40%;
-    top: 90%;
-    transform: translateY(-50%) ;
-    display: flex;
-    color: aliceblue;
+.t4{
+    border: 5px solid rgba(235, 231, 231, 0.192);
+display: flex;
+margin: 0px 0px 0px 0px;
+box-shadow : 10px 10px 10px rgba(218, 218, 213, 0.356)px 0px 0px;
+box-sizing: border-box;
+font-size: 25px ;
+background-color: rgba(22, 22, 22, 0.212);
+
 }
 .bo1{
     text-decoration: none;
-    color: bisque;
-
+    color: rgb(233, 248, 18);
 }
 .bo1:hover{
-    color: aliceblue;
+    text-decoration: none;
+    color:aliceblue
 }
-@media (max-width: 950px) {
+
+
+/* CONTACT — LAST / BELOW FIRST SCREEN */
+.cont1 {
+position: absolute;
+left: 38%;
+top: 115%;
+z-index: 25;
+color: rgba(243, 239, 12, 0.829);
+border: 5px solid rgba(230, 230, 228, 0.144);
+margin: 0px 0px 0px 0px;
+box-sizing: border-box;
+font-size:25px ;
+background-color: rgba(26, 25, 25, 0.185);
+box-shadow: 10px 10px 10px rgba(255, 255, 0, 0);
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media screen and (max-width: 900px) {
+
+    #con21 {
+        font-size: 55px;
+    }
+
+    #con22 {
+        font-size: 23px;
+    }
 
     .menuli {
         left: 50%;
-        top: 35%;
+        top: 45%;
         transform: translate(-50%, -50%);
+        font-size: 21px;
     }
 
     .loc {
         left: 50%;
-        top: 70%;
+        top: 74%;
         transform: translate(-50%, -50%);
+        font-size: 21px;
+    }
+
+    .book {
+        left: 50%;
+        top: 83%;
+        transform: translateX(-50%);
+        font-size: 21px;
     }
 
     .cont1 {
         left: 50%;
-        top: 150%;
-        transform: translate(-50%, -50%);
+        top: 97%;
+        transform: translateX(-50%);
+        font-size: 21px;
     }
-    .book {
-    left: 41%;
-    top:55%
+}
 
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        min-height: 125vh;
+    }
+
+    #con21 {
+        font-size: 50px;
+    }
+
+    #con22 {
+        font-size: 21px;
+        margin-top: 50px;
+    }
+
+    .menuli {
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+    }
+
+    .loc {
+        left: 50%;
+        top: 69%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+    }
+
+    .book {
+        left: 50%;
+        top: 78%;
+        transform: translateX(-50%);
+        font-size: 20px;
+    }
+
+    .cont1 {
+        left: 50%;
+        top: 93%;
+        transform: translateX(-50%);
+        font-size: 20px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        min-height: 130vh;
+    }
+
+    #con21 {
+        font-size: 45px;
+    }
+
+    #con22 {
+        font-size: 20px;
+        margin-top: 45px;
+    }
+
+    .menuli {
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+    }
+
+    .loc {
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+    }
+
+    .book {
+        left: 50%;
+        top: 75%;
+        transform: translateX(-50%);
+        font-size: 18px;
+    }
+
+    .cont1 {
+        left: 50%;
+        top: 88%;
+        transform: translateX(-50%);
+        font-size: 18px;
+    }
+}
+
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        min-height: 135vh;
+    }
+
+    #con21 {
+        font-size: 40px;
+    }
+
+    #con22 {
+        font-size: 18px;
+        margin-top: 40px;
+    }
+
+    .menuli {
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 17px;
+    }
+
+    .loc {
+        left: 50%;
+        top: 62%;
+        transform: translate(-50%, -50%);
+        font-size: 17px;
+    }
+
+    .book {
+        left: 50%;
+        top: 72%;
+        transform: translateX(-50%);
+        font-size: 17px;
+    }
+
+    .cont1 {
+        left: 50%;
+        top: 87%;
+        transform: translateX(-50%);
+        font-size: 17px;
+    }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+   ========================= */
+
+@media screen and (max-width: 400px) {
+
+    body {
+        min-height: 140vh;
+    }
+
+    #con21 {
+        font-size: 36px;
+    }
+
+    #con22 {
+        font-size: 17px;
+        margin-top: 35px;
+    }
+
+    .menuli {
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+    }
+
+    .loc {
+        left: 50%;
+        top: 63%;
+        transform: translate(-50%, -50%);
+        font-size: 16px;
+    }
+
+    .book {
+        left: 50%;
+        top: 70%;
+        transform: translateX(-50%);
+        font-size: 16px;
+    }
+
+    .cont1 {
+        left: 50%;
+        top: 85%;
+        transform: translateX(-50%);
+        font-size: 16px;
+    }
+}
+
+
+/* =========================
+   EXTRA SMALL / OLD IPHONE
+   ========================= */
+
+@media screen and (max-width: 360px) {
+
+    body {
+        min-height: 145vh;
+    }
+
+    #con21 {
+        font-size: 32px;
+    }
+
+    #con22 {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .menuli {
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+    }
+
+    .loc {
+        left: 50%;
+        top: 68%;
+        transform: translate(-50%, -50%);
+        font-size: 15px;
+    }
+
+    .book {
+        left: 50%;
+        top: 78%;
+        transform: translateX(-50%);
+        font-size: 15px;
+    }
+
+    .cont1 {
+        left: 50%;
+        top: 88%;
+        transform: translateX(-50%);
+        font-size: 15px;
     }
 }

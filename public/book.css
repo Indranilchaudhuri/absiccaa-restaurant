@@ -1,66 +1,95 @@
-.book1{
-    
-     display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-
-    
-
-
-}
-.book1 h1{
+.book1 {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-     flex-direction: column;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center
+    padding: 40px 20px;
+    box-sizing: border-box;
 }
-#booking{
-    display:flex;
-    flex-direction:column;
+
+.book1 h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#booking {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+/* Make form boxes responsive */
+#booking input,
+#booking select,
+#booking textarea,
+#booking button {
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+/* Confirmation message */
+#message {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 0;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-#message{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: 30%;
+    text-align: center;
     font-style: italic;
     font-size: 50px;
+    line-height: 1.2;
+    box-sizing: border-box;
 }
-@media (max-width:600px){
-    .book1{
-    
-     display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
 
-    
+/* MOBILE */
+@media (max-width: 600px) {
 
-
+    .book1 {
+        width: 100%;
+        min-height: auto;
+        padding: 30px 15px;
+        justify-content: flex-start;
     }
-.book1 h1{
-    display: flex;
-     flex-direction: column;
-    justify-content: center;
-    align-items: center
-    }
-#booking{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-   }
-#message{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 30%;
-    font-style: italic;
-    font-size: 50px;
-   }
 
+    .book1 h1 {
+        width: 100%;
+        margin: 10px 0 25px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #booking {
+        width: 100%;
+        max-width: 100%;
+        gap: 15px;
+    }
+
+    #booking input,
+    #booking select,
+    #booking textarea,
+    #booking button {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #message {
+        position: relative;
+        top: auto;
+        width: 100%;
+        margin-top: 25px;
+        padding: 10px;
+        font-size: 28px;
+        line-height: 1.3;
+        text-align: center;
+    }
 }
